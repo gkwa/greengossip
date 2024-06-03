@@ -4,6 +4,7 @@ import (
 	"log/slog"
 	"os"
 	"path/filepath"
+	"sort"
 	"strings"
 
 	"github.com/yuin/goldmark"
@@ -31,6 +32,10 @@ func getProducts(markdownDir string, verbose bool) []string {
 		slog.Error("error walking path", "path", markdownDir, "error", err)
 		os.Exit(1)
 	}
+
+	sort.SliceStable(products, func(i, j int) bool {
+		return strings.ToLower(products[i]) < strings.ToLower(products[j])
+	})
 
 	if verbose {
 		slog.Info("found products", "products", products)

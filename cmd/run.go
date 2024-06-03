@@ -1,9 +1,6 @@
 package cmd
 
 import (
-	"log/slog"
-	"os"
-
 	"github.com/gkwa/greengossip/core"
 	"github.com/spf13/cobra"
 )
@@ -28,12 +25,6 @@ to quickly create a Cobra application.`,
 func init() {
 	rootCmd.AddCommand(runCmd)
 
-	var err error
 	runCmd.PersistentFlags().BoolVar(&verbose, "verbose", false, "enable verbose logging")
-	runCmd.PersistentFlags().StringVar(&markdownDir, "markdown-dir", "", "path to Obsidian vault")
-	err = runCmd.MarkPersistentFlagRequired("markdown-dir")
-	if err != nil {
-		slog.Error("error marking flag as required", "flag", "markdown-dir", "error", err)
-		os.Exit(1)
-	}
+	runCmd.PersistentFlags().StringVar(&markdownDir, "markdown-dir", "/Users/mtm/Documents/Obsidian Vault", "path to Obsidian vault")
 }

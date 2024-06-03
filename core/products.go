@@ -45,13 +45,6 @@ func getProducts(markdownDir string, verbose bool) []string {
 }
 
 func extractProduct(path string) string {
-	file, err := os.Open(path)
-	if err != nil {
-		slog.Error("error opening file", "path", path, "error", err)
-		return ""
-	}
-	defer file.Close()
-
 	content, err := os.ReadFile(path)
 	if err != nil {
 		slog.Error("error reading file", "path", path, "error", err)

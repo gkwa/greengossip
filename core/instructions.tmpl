@@ -22,6 +22,17 @@ Please make the following transformation: If the ingredient you see in
 the recipe semantically matches one of the below pre-existing
 ingredients, then wrap the ingredient its pre-existing alias.
 
+So, for example, when you see this:
+6 fresh thyme sprigs
+
+then please rewrite it as as a markdown task like this:
+- [x] 6 fresh [[fresh thyme leaves]]
+
+because fresh thyme leaves is in our pre-existing ingredients list and 
+
+fresh thyme sprigs is symantically very similar--if not the same--as
+fresh thyme leaves.
+
 If the ingredient doesn't yet exist in our pre-existing list then
 still you should wrap the ingredient in a link like this: [[dried cranberries]].
 

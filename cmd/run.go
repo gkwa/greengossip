@@ -30,10 +30,10 @@ func init() {
 
 	var err error
 	runCmd.PersistentFlags().BoolVar(&verbose, "verbose", false, "enable verbose logging")
-	runCmd.PersistentFlags().StringVar(&markdownDir, "obsidian-vault-path", "", "path to Obsidian vault")
-	err = runCmd.MarkPersistentFlagRequired("obsidian-vault-path")
+	runCmd.PersistentFlags().StringVar(&markdownDir, "markdown-dir", "", "path to Obsidian vault")
+	err = runCmd.MarkPersistentFlagRequired("markdown-dir")
 	if err != nil {
-		slog.Error("error marking flag as required", "flag", "obsidian-vault-path", "error", err)
+		slog.Error("error marking flag as required", "flag", "markdown-dir", "error", err)
 		os.Exit(1)
 	}
 }

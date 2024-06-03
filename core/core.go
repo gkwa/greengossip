@@ -9,8 +9,8 @@ import (
 	"github.com/atotto/clipboard"
 )
 
-func Run(obsidianVaultPath string, verbose bool) {
-	products := getProducts(obsidianVaultPath, verbose)
+func Run(markdownDir string, verbose bool) {
+	products := getProducts(markdownDir, verbose)
 
 	clipboardContent := getClipboardContent()
 

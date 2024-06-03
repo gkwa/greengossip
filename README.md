@@ -7,6 +7,7 @@ Purpose:
 
 ```bash
 
+greengossip run
 
 ```
 

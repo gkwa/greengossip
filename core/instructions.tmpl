@@ -1,0 +1,51 @@
+- You will not add preamble to your response.
+
+- You will not add comments to code.
+
+- You will not elaborate on the code in prose, you will only reply in code.
+
+Please convert recipe below into markdown format.
+
+Convert each ingredient to a task and add markdown links to each item.
+Example details are below.
+
+So when you see this for example:
+"½ cup dried cranberries"
+
+please rewrite it as as a markdown task like this:
+- [x] ½ cup [[dried cranberries]]
+
+Where [x] represents a completed task and [[ ]] is the commonmark
+syntx to represent a hyperlink.
+
+Please make the following transformation: If the ingredient you see in
+the recipe semantically matches one of the below pre-existing
+ingredients, then wrap the ingredient its pre-existing alias.
+
+If the ingredient doesn't yet exist in our pre-existing list then
+still you should wrap the ingredient in a link like this: [[dried cranberries]].
+
+You should include the recipe instructions as well as the ingredients.
+
+Please convert the content in the -- recipe.txt -- section below.
+
+Please give the markdown file this frontmatter. Remember frontmatter
+starting block is denoted by 3 hyphens and ends with 3 hypens. Here is
+the frontmatter I'd like you to add:
+
+---
+filetype: recipe
+creator:
+---
+
+There should be no whitespace between the frontmatter start and the
+beginning of your response.
+
+Please reply in a single code block.
+
+-- pre-existing-ingredients.txt ---
+{{range .Products}}{{.}}
+{{end}}
+
+--- recipe.txt ---
+{{.Clipboard}}

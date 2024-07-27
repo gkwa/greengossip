@@ -18,6 +18,48 @@ please rewrite it as as a markdown task like this:
 Where [x] represents a completed task and [[ ]] is the Obsidian
 flavored markdown syntax to represent a hyperlink.
 
+
+
+# Instructions for Converting and Formatting Recipe Measurements
+
+1. Convert the given metric measurements to US customary units.
+   - Use appropriate conversions (e.g., 1 oz ≈ 28.35 g).
+   - Round to practical cooking measurements.
+
+2. Format each ingredient on a single line:
+   - Keep the original checkbox format if present.
+   - Start with the metric measurement.
+   - Follow with the US measurement in parentheses.
+   - Include any additional descriptors (e.g., "can", "dry or drained").
+
+3. Use forward slashes (/) to separate metric and US measurements.
+
+4. Keep all other information from the original list intact.
+
+## Examples
+
+Original:
+- [x] 100 g (1 can) chickpeas, dry or drained
+- [x] 224 g (1/2 lb) orzo
+
+Converted and formatted:
+- [x] 100 g / 3.5 oz (1 can) chickpeas, dry or drained
+- [x] 224 g / 8 oz (1/2 lb) orzo
+
+Another example:
+Original:
+- [ ] 500 ml heavy cream
+- [ ] 50 g unsalted butter
+
+Converted and formatted:
+- [ ] 500 ml / 2.1 cups heavy cream
+- [ ] 50 g / 1.8 oz unsalted butter
+
+
+
+
+
+
 Please make the following transformation: If the ingredient you see in
 the recipe semantically matches one of the below pre-existing
 ingredients, then wrap the ingredient its pre-existing alias.
@@ -41,6 +83,7 @@ Please apply the same logic for exam if you find chickpeas or orzo
 - orzo is the ingredient which is in fact orzo pasta
 
 These are just examples of course.
+
 
 If the ingredient doesn't yet exist in our pre-existing list then
 still you should wrap the ingredient in a link like this: [[dried

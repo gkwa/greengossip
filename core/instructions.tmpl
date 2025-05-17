@@ -128,8 +128,6 @@ Meanwhile, over medium heat, add onions, oil, remaining butter, salt & pepper to
 
 You should reformat the step like this:
 
-
-
 <instruction_step>
 Meanwhile, over medium heat, add
 
@@ -150,15 +148,17 @@ ordered list. Instead we want to keep the indent as flat as possible.
 So, you've gathered the comma separated list of items in a particular step and made
 it very easy to ready by reformatting the list of items into a bulleted list.
 
-Please convert the content in the -- recipe.txt -- section below.
+Please convert the content in the recipe xml element below.
 
 Please reply in a single code block.
 
 Each sentence should be a new paragraph.
 
--- pre-existing-ingredients.txt ---
+<pre-existing_ingredients>
 {{range .Products}}{{.}}
 {{end}}
+</pre-existing_ingredients>
 
---- recipe.txt ---
+<recipe>
 {{.Clipboard}}
+</recipe>

@@ -2,7 +2,7 @@ module github.com/gkwa/greengossip
 
 go 1.25.0
 
-toolchain go1.26.5
+toolchain go1.26.6
 
 require (
 	github.com/atotto/clipboard v0.1.4
@@ -12,7 +12,7 @@ require (
 	github.com/spf13/viper v1.21.0
 	github.com/taylormonacelli/goldbug v0.0.6
 	github.com/yuin/goldmark v1.8.5
-	github.com/yuin/goldmark-meta/v2 v2.0.0
+	github.com/yuin/goldmark-meta v1.1.0
 	github.com/yuin/goldmark-meta/v2 v2.0.0
 )
 

@@ -14,7 +14,7 @@ require (
 	github.com/yuin/goldmark v1.8.6
 	github.com/yuin/goldmark-meta v1.1.0
 	github.com/yuin/goldmark-meta/v2 v2.0.2
-	github.com/yuin/goldmark/v2 v2.0.0
+	github.com/yuin/goldmark/v2 v2.0.1
 )
 
 require (
